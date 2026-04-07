@@ -2,6 +2,10 @@
 
 This repository accompanies our paper "A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain." The codebase focuses on improving retrieval in legal RAG systems by replacing raw chunk indexing with validated summaries. We organized it primarily as a research repository of scripts, generated artifacts, and experiment outputs rather than as a packaged library.
 
+## Methodology Overview
+
+![Methodology](assets/methodology.png)
+
 ## What This Repository Implements
 
 Our paper's workflow maps to the repository as follows:
