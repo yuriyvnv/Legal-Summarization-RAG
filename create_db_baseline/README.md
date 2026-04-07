@@ -1,6 +1,6 @@
 # Summary-Based Vector DB Construction
 
-This directory contains the scripts that build the Chroma vector stores used for the repository's summary-based retrieval experiments. These scripts operate on corrected summary artifacts rather than raw benchmark chunks.
+This directory contains the scripts we use to build the Chroma vector stores for our summary-based retrieval experiments. These scripts operate on corrected summary artifacts rather than raw benchmark chunks.
 
 ## Shared Design
 
@@ -53,6 +53,6 @@ This is important because the evaluation scripts in [`../baseline_V1/evaluation/
 
 ## Notes
 
-- These scripts are experimental builders, not idempotent package commands. Some of them delete and recreate collections on startup.
-- Paths and GPU settings are hardcoded for the original environment.
+- These are experimental builders, not idempotent package commands. Some of them delete and recreate collections on startup.
+- Paths and GPU settings are hardcoded for our original environment.
 - The fine-tuned MultiQA and GTR variants are best understood as different embedding backends applied to the same validated-summary retrieval design.

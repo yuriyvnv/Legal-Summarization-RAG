@@ -1,6 +1,6 @@
 # Summary-Based Evaluation
 
-This directory contains the evaluation scripts for the repository's proposed retrieval setup: hierarchical retrieval over validated summaries. These scripts are closer to the paper's main method than the raw benchmark baseline in [`../../baseline_from_benchmark/`](../../baseline_from_benchmark/).
+This directory contains the evaluation scripts for our proposed retrieval setup: hierarchical retrieval over validated summaries. These scripts are closer to our paper's main method than the raw benchmark baseline in [`../../baseline_from_benchmark/`](../../baseline_from_benchmark/).
 
 ## Shared Retrieval Pattern
 
@@ -11,7 +11,7 @@ Most scripts in this directory use the same two-stage retrieval strategy:
 3. query the `chunks` collection restricted by `where={"doc_id": ...}`
 4. evaluate success by checking whether any gold answer appears in the retrieved `original_text`
 
-This matches the repository's hierarchical summary-based representation design.
+This matches our hierarchical summary-based representation design.
 
 ## Evaluation Scripts
 
@@ -56,10 +56,10 @@ This makes the result folders directly comparable across embedding models.
 
 ## How This Directory Relates to the Paper
 
-This directory is the closest code representation of the paper's main comparison table across embedding models. The important distinction from the raw benchmark baseline is that retrieval happens over validated summary representations stored in separate `documents` and `chunks` collections.
+This directory is the closest code representation of our paper's main comparison table across embedding models. The important distinction from the raw benchmark baseline is that retrieval happens over validated summary representations stored in separate `documents` and `chunks` collections.
 
 ## Notes
 
 - The scripts here assume that the relevant Chroma stores have already been built by the scripts in [`../../create_db_baseline/`](../../create_db_baseline/).
 - The OpenAI, BGE, MultiQA, all-MiniLM, and GTR scripts differ mostly by embedding backend and the associated persistence directory.
-- Several scripts use aggressive batching and concurrency tuned for the author's original hardware environment.
+- Several scripts use aggressive batching and concurrency tuned for our original hardware environment.

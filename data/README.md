@@ -1,6 +1,6 @@
 # Data Directory
 
-This directory holds the repository's benchmark inputs, preprocessed corpora, summary artifacts, and small analysis helpers. Most large files here are Git LFS-managed.
+This directory holds our benchmark inputs, preprocessed corpora, summary artifacts, and small analysis helpers. Most large files here are Git LFS-managed.
 
 ## Layout
 
@@ -41,9 +41,9 @@ This directory holds the repository's benchmark inputs, preprocessed corpora, su
 ## How These Files Fit the Paper
 
 1. The benchmark JSON files in [`benchmarks/`](benchmarks/) define the evaluation tasks.
-2. The chunked corpora in [`original_chunked/`](original_chunked/) serve as the repository's starting point for representation generation.
+2. The chunked corpora in [`original_chunked/`](original_chunked/) serve as our starting point for representation generation.
 3. The raw summary files in [`summarized_data_raw/`](summarized_data_raw/) are intermediate outputs from chunk summarization.
-4. The corrected and merged files in [`combined_summarized_corrected/`](combined_summarized_corrected/) correspond to the validated representation layer used for summary-based retrieval experiments.
+4. The corrected and merged files in [`combined_summarized_corrected/`](combined_summarized_corrected/) correspond to our validated representation layer used for summary-based retrieval experiments.
 
 ## Notes
 

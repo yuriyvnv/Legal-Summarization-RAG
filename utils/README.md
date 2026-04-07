@@ -1,6 +1,6 @@
 # Utils Directory
 
-This directory contains the support scripts that turn raw chunk summaries into validated artifacts suitable for retrieval. These scripts are the operational glue of the paper's self-improvement loop.
+This directory contains our support scripts that turn raw chunk summaries into validated artifacts suitable for retrieval. These scripts are the operational glue of our self-improvement loop.
 
 ## Main Responsibilities
 
@@ -52,7 +52,7 @@ This directory contains the support scripts that turn raw chunk summaries into v
 
 ## Relationship to the Paper
 
-The paper describes an iterative quality-controlled summary workflow. In this repository, that workflow is not implemented as one monolithic script. Instead, it is distributed across:
+Our paper describes an iterative quality-controlled summary workflow. In this repository, we did not implement that workflow as one monolithic script. Instead, we distributed it across:
 
 - verification and gap detection
 - summary evaluation
@@ -60,10 +60,10 @@ The paper describes an iterative quality-controlled summary workflow. In this re
 - regeneration / correction
 - merge and final document-summary generation
 
-The scripts in this directory therefore represent the practical implementation of the "self-improvement" stage discussed in the paper.
+The scripts in this directory therefore represent our practical implementation of the "self-improvement" stage discussed in the paper.
 
 ## Caveats
 
 - Most scripts assume hardcoded paths under `/home/yperezhohin/Legal-Summarization-RAG/...`.
 - GPU selection is often set inside the scripts with `CUDA_VISIBLE_DEVICES`.
-- Several scripts write large JSON artifacts directly, so they should be treated as experiment pipeline steps rather than reusable library functions.
+- Several scripts write large JSON artifacts directly, so treat them as experiment pipeline steps rather than reusable library functions.

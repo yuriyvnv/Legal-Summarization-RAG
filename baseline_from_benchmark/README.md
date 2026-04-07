@@ -1,10 +1,10 @@
 # Raw-Chunk Benchmark Baseline
 
-This directory contains the raw-chunk baseline pipeline used to compare the proposed summary-based method against a benchmark-style retrieval setup. In this branch of the workflow, documents are indexed as original chunks rather than validated summaries.
+This directory contains our raw-chunk baseline pipeline, used to compare our proposed summary-based method against a benchmark-style retrieval setup. In this branch of the workflow, we index documents as original chunks rather than validated summaries.
 
 ## Conceptual Role
 
-The scripts here correspond to the "benchmark" side of the paper:
+The scripts here correspond to the "benchmark" side of our paper:
 
 1. build a single Chroma collection from raw chunk text
 2. evaluate retrieval on LEGALBENCH-RAG queries
@@ -38,17 +38,17 @@ Unlike the summary-based evaluation in [`../baseline_V1/evaluation/`](../baselin
 These scripts follow the same broad pattern:
 
 1. load one benchmark dataset JSON from [`../data/benchmarks/`](../data/benchmarks/)
-2. extract the user query and the target document name
+2. extract the query and the target document name
 3. query the raw-chunk `documents` collection with a `where={"document": doc_name}` filter
 4. mark a query as correct if any gold answer appears as a substring in any retrieved chunk
 5. aggregate precision, recall, F1, and accuracy for `k = [1, 2, 4, 8]`
 
 ## Why This Directory Matters
 
-This directory is the main reference point for the paper's benchmark comparison. It keeps the retrieval target as raw chunk text so the effect of validated summaries can be compared against a more conventional chunk-indexing approach.
+This directory is the main reference point for our paper's benchmark comparison. It keeps the retrieval target as raw chunk text so the effect of validated summaries can be compared against a more conventional chunk-indexing approach.
 
 ## Notes
 
 - The persistence directories are hardcoded under `data/benchmarks/`.
-- These scripts are standalone experiment runners, so they write local JSON and CSV/TXT outputs directly into this folder.
+- These are standalone experiment runners that write local JSON and CSV/TXT outputs directly into this folder.
 - The "optimized" script is not a different method; it is a performance-oriented execution variant of the same baseline idea.

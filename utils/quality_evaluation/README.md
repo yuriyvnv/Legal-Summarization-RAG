@@ -1,6 +1,6 @@
 # Quality Evaluation
 
-This directory contains the scripts that evaluate, diagnose, repair, and merge chunk summaries. Together, they implement the repository's practical version of the paper's quality-control stage.
+This directory contains the scripts we use to evaluate, diagnose, repair, and merge chunk summaries. Together, they implement our practical version of the quality-control stage described in our paper.
 
 ## Structure
 
@@ -49,6 +49,6 @@ These scripts use `meta-llama/Llama-3.1-8B-Instruct` evaluation prompts and writ
 
 ## Caveats
 
-- These scripts are research utilities with hardcoded paths and large JSON dependencies.
-- They are designed around saved artifacts, not a single reusable API.
-- Review local path assumptions before rerunning them on another machine.
+- These are research utilities with hardcoded paths and large JSON dependencies.
+- We designed them around saved artifacts, not a single reusable API.
+- Review local path assumptions before rerunning on another machine.

@@ -1,10 +1,10 @@
 # Legal-Summarization-RAG
 
-This repository accompanies the paper "A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain." The codebase focuses on improving retrieval in legal RAG systems by replacing raw chunk indexing with validated summaries, and it is organized primarily as a research repository of scripts, generated artifacts, and experiment outputs rather than as a packaged library.
+This repository accompanies our paper "A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain." The codebase focuses on improving retrieval in legal RAG systems by replacing raw chunk indexing with validated summaries. We organized it primarily as a research repository of scripts, generated artifacts, and experiment outputs rather than as a packaged library.
 
 ## What This Repository Implements
 
-The paper's workflow maps to the repository as follows:
+Our paper's workflow maps to the repository as follows:
 
 | Paper stage | Responsibility in code | Main files |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ uv sync
 
 ### Git LFS
 
-Large JSON artifacts and several experiment scripts are tracked with Git LFS. After cloning:
+Large JSON artifacts are tracked with Git LFS. After cloning:
 
 ```bash
 git lfs install
@@ -95,9 +95,8 @@ Most scripts are written as standalone research scripts and commonly assume:
 ## Reproducibility Caveats
 
 - Many scripts still contain hardcoded absolute paths such as `/home/yperezhohin/Legal-Summarization-RAG/...`. Review and normalize them before running on a new machine.
-- The repository stores both source scripts and generated experiment artifacts. Not every JSON file is an input; many are saved outputs from prior runs.
-- Initial document chunking is treated as an input artifact in this repository. The code here mainly consumes pre-chunked JSON instead of exposing a single canonical chunking script.
-- Before publishing or sharing the repository, review scripts for machine-specific settings and any embedded credentials.
+- We store both source scripts and generated experiment artifacts. Not every JSON file is an input; many are saved outputs from prior runs.
+- We treat initial document chunking as an input artifact. The code here mainly consumes pre-chunked JSON instead of exposing a single canonical chunking script.
 
 ## Recommended Reading Order
 
