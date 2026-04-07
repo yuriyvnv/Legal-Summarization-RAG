@@ -1,0 +1,23 @@
+# Large data artifacts
+data/**/*.json filter=lfs diff=lfs merge=lfs -text
+
+# Generated verification and correction artifacts
+utils/missing_summaries.json filter=lfs diff=lfs merge=lfs -text
+utils/verification_results.json filter=lfs diff=lfs merge=lfs -text
+utils/quality_evaluation/results/*.json filter=lfs diff=lfs merge=lfs -text
+# Batched summarization outputs
+baseline_w_8B_summaries/*.json filter=lfs diff=lfs merge=lfs -text
+# Summary-based evaluation outputs
+baseline_V1/evaluation/intermediate_*.json filter=lfs diff=lfs merge=lfs -text
+baseline_V1/evaluation/evaluation_results_*/*.json filter=lfs diff=lfs merge=lfs -text
+baseline_V1/evaluation/evaluation_results_*/*.csv filter=lfs diff=lfs merge=lfs -text
+baseline_V1/evaluation/evaluation_results_*/*.txt filter=lfs diff=lfs merge=lfs -text
+# Raw-chunk baseline evaluation outputs
+baseline_from_benchmark/intermediate_*.json filter=lfs diff=lfs merge=lfs -text
+baseline_from_benchmark/evaluation_results_*/*.json filter=lfs diff=lfs merge=lfs -text
+baseline_from_benchmark/evaluation_results_*/*.csv filter=lfs diff=lfs merge=lfs -text
+baseline_from_benchmark/evaluation_results_*/*.txt filter=lfs diff=lfs merge=lfs -text
+baseline_V1/evaluation/README.md !text !filter !merge !diff
+data/README.md !text !filter !merge !diff
+*.py !text !filter !merge !diff
+*.md !text !filter !merge !diff
