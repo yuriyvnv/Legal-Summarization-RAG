@@ -98,7 +98,6 @@ Most scripts are written as standalone research scripts and commonly assume:
 
 ## Reproducibility Caveats
 
-- Many scripts still contain hardcoded absolute paths such as `/home/yperezhohin/Legal-Summarization-RAG/...`. Review and normalize them before running on a new machine.
 - We store both source scripts and generated experiment artifacts. Not every JSON file is an input; many are saved outputs from prior runs.
 - We treat initial document chunking as an input artifact. The code here mainly consumes pre-chunked JSON instead of exposing a single canonical chunking script.
 
@@ -109,3 +108,12 @@ Most scripts are written as standalone research scripts and commonly assume:
 3. Read [`utils/README.md`](utils/README.md) and [`utils/quality_evaluation/README.md`](utils/quality_evaluation/README.md) for the self-improvement and correction workflow.
 4. Read [`create_db_baseline/README.md`](create_db_baseline/README.md) for summary-based vector DB creation.
 5. Compare [`baseline_from_benchmark/README.md`](baseline_from_benchmark/README.md) and [`baseline_V1/evaluation/README.md`](baseline_V1/evaluation/README.md) to understand baseline versus proposed retrieval evaluation.
+
+## PAPER AVAILABLE 
+Read the paper here [WCCI2026](https://linklings.s3.amazonaws.com/organizations/WCCI/wcci2026/submissions/stype114/KUf2X-ijcnn_pap1264s2.pdf)
+Cite : 
+@article{perezhohin2026summarization,
+  title={A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain},
+  author={Perezhohin, Yuriy and Riedlinger, Fl{\'a}vio and Costa, Victor and Castelli, Mauro},
+  year={2026}
+}
