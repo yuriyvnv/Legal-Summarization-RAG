@@ -111,9 +111,14 @@ Most scripts are written as standalone research scripts and commonly assume:
 
 ## PAPER AVAILABLE 
 Read the paper here [WCCI2026](https://linklings.s3.amazonaws.com/organizations/WCCI/wcci2026/submissions/stype114/KUf2X-ijcnn_pap1264s2.pdf)
+
+
 Cite : 
+
+```bibtex
 @article{perezhohin2026summarization,
   title={A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain},
   author={Perezhohin, Yuriy and Riedlinger, Fl{\'a}vio and Costa, Victor and Castelli, Mauro},
   year={2026}
 }
+```
