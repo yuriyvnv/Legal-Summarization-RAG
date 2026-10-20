@@ -116,9 +116,13 @@ Read the paper here [WCCI2026](https://linklings.s3.amazonaws.com/organizations/
 Cite : 
 
 ```bibtex
-@article{perezhohin2026summarization,
-  title={A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain},
-  author={Perezhohin, Yuriy and Riedlinger, Fl{\'a}vio and Costa, Victor and Castelli, Mauro},
-  year={2026}
-}
+@INPROCEEDINGS{11728443,
+  author={Perezhohin, Yuriy and Riedlinger, Flavio and Costa, Victor and Castelli, Mauro},
+  booktitle={2026 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={A Summarization Framework with Self-Improvement for RAG Retrieval in the Legal Domain}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/IJCNN69854.2026.11728443}}
 ```
