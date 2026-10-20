@@ -110,7 +110,7 @@ Most scripts are written as standalone research scripts and commonly assume:
 5. Compare [`baseline_from_benchmark/README.md`](baseline_from_benchmark/README.md) and [`baseline_V1/evaluation/README.md`](baseline_V1/evaluation/README.md) to understand baseline versus proposed retrieval evaluation.
 
 ## PAPER AVAILABLE 
-Read the paper here [WCCI2026](https://linklings.s3.amazonaws.com/organizations/WCCI/wcci2026/submissions/stype114/KUf2X-ijcnn_pap1264s2.pdf)
+Read the paper here [WCCI2026](https://ieeexplore.ieee.org/document/11728443)
 
 
 Cite : 
